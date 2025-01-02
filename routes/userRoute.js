@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUsers } from '../controller/userController.js';
+import { getUsers,getUserById,createUser,deleteUser,updateUser } from '../controller/userController.js';
 
 const router = express.Router();
 
@@ -11,17 +11,16 @@ const router = express.Router();
 //   res.send('About Page');
 // });
 
-
-//router.get('payj',callBackFn())
-
-router.get('/users',getUsers);
 router.get('/amey',(req,res)=>{
   res.send('Amey!');
 });
-// router.get('/user/:id',getUserById);
-// router.post('/createuser',createUser);
-// router.patch('/updateusers/:id',updateUser);
-// router.delete('/deleteuser/:id',deleteUser);
+//router.get('payj',callBackFn())
+
+router.get('/users',getUsers);
+router.get('/user/:id',getUserById);
+router.post('/createuser',createUser);
+router.patch('/updateusers/:id',updateUser);
+router.delete('/deleteuser/:id',deleteUser);
 
 
 export default router;
