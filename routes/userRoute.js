@@ -15,6 +15,9 @@ const router = express.Router();
 //router.get('payj',callBackFn())
 
 router.get('/users',getUsers);
+router.get('/amey',(req,res)=>{
+  res.send('Amey!');
+});
 // router.get('/user/:id',getUserById);
 // router.post('/createuser',createUser);
 // router.patch('/updateusers/:id',updateUser);
