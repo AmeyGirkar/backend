@@ -18,5 +18,5 @@ const MERNUser  = mongoose.Schema({
         required: true,
     }
 })
-
-export default mongoose.model('users_in_collection', MERNUser);
+//export default mongoose.model('mongoDB_collection_name', MERNUser);
+export default mongoose.model('MERNUser', MERNUser);
